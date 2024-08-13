@@ -3,6 +3,7 @@ import cors from "cors"
 const app = express()
 
 const port = 5000
+app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Hello, World!');
   });
@@ -22,9 +23,9 @@ app.get('/', (req, res) => {
   });
   app.post('/api/sendData', (req, res) => {
     const receivedData = req.body.data;
-    console.log("Received data from client:", receivedData);
+    console.log('Received data from client:', receivedData);
   
-    res.json({ message: "Data received successfully!" });
+    res.json({ message: 'Data received successfully!' });
   });
 app.listen(port,()=>{
     console.log(`Server is running on port : ${port}`);
