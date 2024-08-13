@@ -6,9 +6,9 @@ const port = 5000
 app.get('/', (req, res) => {
     res.send('Hello, World!');
   });
-app.get('/home', (req, res) => {
-    res.send('home page');
-  });
+// app.get('/home', (req, res) => {
+//     res.send('home page');
+//   });
 
   const corsOptions = {
     origin: ['https://frontend-lemon-seven.vercel.app', 'http://localhost:3000'],
