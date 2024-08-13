@@ -11,7 +11,7 @@ app.get('/home', (req, res) => {
   });
 
   const corsOptions = {
-    origin: 'https://frontend-lemon-seven.vercel.app',
+    origin: ['https://frontend-lemon-seven.vercel.app', 'http://localhost:3000'],
   };
   
   app.use(cors(corsOptions));
