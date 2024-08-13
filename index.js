@@ -20,6 +20,12 @@ app.get('/', (req, res) => {
   app.get('/api/endpoint', (req, res) => {
     res.json({ message: 'kia hal hian ' });
   });
+  app.post('/api/sendData', (req, res) => {
+    const receivedData = req.body.data;
+    console.log("Received data from client:", receivedData);
+  
+    res.json({ message: "Data received successfully!" });
+  });
 app.listen(port,()=>{
     console.log(`Server is running on port : ${port}`);
     
