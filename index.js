@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
   
   // Your existing routes and middleware
   app.get('/api/endpoint', (req, res) => {
-    res.json({ message: 'Hello from the backend!' });
+    res.json({ message: 'kia hal hian ' });
   });
 app.listen(port,()=>{
     console.log(`Server is running on port : ${port}`);
